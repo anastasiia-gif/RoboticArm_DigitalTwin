@@ -1,0 +1,20 @@
+> python plcsim_opcua_bridge.py --run --stop-at 1 --resume-after 3
+BRIDGE : 2026-09-21-opcua-c (NX presence sensor + plant joints)
+API DLL : C:\Program Files (x86)\Common Files\Siemens\PLCSIMADV\API\7.0\Siemens.Simatic.Simulation.Runtime.Api.x64.dll
+Instances: Robot_Cell
+Using : Robot_Cell
+State : Run
+Taglist : 205 tags visible
+Plant : ...\DIT\FMU\ConveyorTransport.fmu
+joints slewed at 45 deg/s to match the MCD position controls
+product at pick: NX presence sensor CS_Pick
+OPC UA : opc.tcp://192.168.2.58:4840/robotcell/ (15 variables)
+Reset : cell was in state 50, sending Cmd_Reset
+Reset : cell at state 0 (IDLE)
+t[s] state cyc band grip Cmd_A1..A4
+0.00 0 0 0 0 0.0 0.0 0.0 0.0
+0.59 10 0 1 0 0.0 0.0 0.0 0.0
+19.02 100 0 0 0 0.0 0.0 0.0 0.0
+PLC reports FAULT
+Events: [('Start', 0.56), ('Stop', 1.0), ('Resume', 4.01), ('Resume', 4.04), ('FAULT', 19.02)]
+OPC UA round trip: median 9.0 ms, max 117.1 ms over 534 steps
